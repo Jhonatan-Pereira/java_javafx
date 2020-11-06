@@ -10,6 +10,9 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Contador extends Application {
+	
+	private int contador = 0;
+	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
@@ -17,7 +20,17 @@ public class Contador extends Application {
 		Label labelNumero = new Label("0");
 		
 		Button botaoIncremento = new Button("+");
+		botaoIncremento.setOnAction(e -> {
+			contador++;
+			labelNumero.setText(Integer.toString(contador));
+		});
+		
 		Button botaoDecremento = new Button("-");
+		botaoDecremento.setOnAction(e -> {
+			contador--;
+			labelNumero.setText(Integer.toString(contador));
+		});
+		
 		HBox boxBotoes = new HBox();
 		boxBotoes.setAlignment(Pos.CENTER);
 		boxBotoes.setSpacing(10);
