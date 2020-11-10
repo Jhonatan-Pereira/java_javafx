@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1">
-	
-</BorderPane>
+<GridPane xmlns:fx="http://javafx.com/fxml/1">
+
+	<Label 
+		GridPane.columnIndex="0"
+		GridPane.rowIndex="0"
+		text="Seja bem vindo">
+	</Label>
+	<Label
+		GridPane.columnIndex="0"
+		GridPane.rowIndex="1" 
+		text="E-mail: ">
+	</Label>
+	<TextField
+		GridPane.columnIndex="1"
+		GridPane.rowIndex="1">
+	</TextField>
+	<Label 
+		GridPane.columnIndex="0"
+		GridPane.rowIndex="2"
+		text="Senha: ">
+	</Label>
+	<PasswordField
+		GridPane.columnIndex="1"
+		GridPane.rowIndex="2">
+	</PasswordField>
+	<Button
+		GridPane.columnIndex="0"
+		GridPane.rowIndex="3" 
+		text="Entrar">	
+	</Button>
+</GridPane>
 
